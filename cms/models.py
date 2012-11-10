@@ -21,6 +21,9 @@ class Page(models.Model):
 	def __unicode__(self):
 		return self.title
 
+	class Meta:
+		ordering = ['priority']
+
 class Entry(models.Model):
 	language = models.ForeignKey('Language')
 
