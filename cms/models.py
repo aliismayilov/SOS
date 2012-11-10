@@ -14,6 +14,10 @@ class Page(models.Model):
 	slug = models.SlugField()
 	body = models.TextField()
 
+	# optional fields
+	parent = models.ForeignKey('self', blank=True, null=True)
+	priority = models.IntegerField(blank=True, null=True)
+
 	def __unicode__(self):
 		return self.title
 
