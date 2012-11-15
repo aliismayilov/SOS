@@ -4,5 +4,12 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    url(r'^admin/', include(admin.site.urls)),
+	url(r'^admin/', include(admin.site.urls)),
+)
+
+urlpatterns += patterns('cms.views',
+	url(r'^(?P<language>[a-z]{2,3})/(?P<year>\d{4})/(?P<month>[a-z]{3})/(?P<day>\d{2})/(?P<slug>(\w|-)+).html$', 'show_entry'),
+	url(r'^(?P<language>[a-z]{2,3})/(?P<slug>(\w|-)+).html$', 'show_page'),
+	url(r'^(?P<language>[a-z]{2,3})/$', 'index'),
+	url(r'', 'index'),
 )
