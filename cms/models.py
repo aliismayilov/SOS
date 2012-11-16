@@ -7,6 +7,9 @@ class Language(models.Model):
 	def __unicode__(self):
 		return self.small_name
 
+	def get_absolute_url(self):
+		return '/%s' % self.small_name
+
 class Page(models.Model):
 	language = models.ForeignKey('Language')
 	
@@ -24,6 +27,9 @@ class Page(models.Model):
 	class Meta:
 		ordering = ['priority']
 
+	def get_absolute_url(self):
+		return '/%s/%s.html' % (self.language, self.slug)
+
 class Entry(models.Model):
 	language = models.ForeignKey('Language')
 
@@ -39,3 +45,10 @@ class Entry(models.Model):
 	class Meta:
 		verbose_name_plural = "entries"
 		ordering = ['-date_published']
+
+	def get_absolute_url(self):
+		return '/%s/%s/%s.html' % (
+				self.language,
+				self.date_published.strftime("%Y/%b/%d").lower(),
+				self.slug,
+			)
