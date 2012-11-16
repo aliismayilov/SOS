@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}{{ entry.title }}{% endblock %}
+
+{% block content %}
+	<h1>{{ entry.title }}</h1>
+	<time>{{ entry.date_published|date:"d.m.Y" }}</time>
+	<div>{{ entry.body|safe }}</div>
+{% endblock %}
