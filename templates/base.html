@@ -5,8 +5,12 @@
 	<title>{% block title %}{% endblock %}</title>
 	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet" />
 	<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+	<link href="{{ STATIC_URL }}css/main.css" rel="stylesheet" />
 </head>
 <body>
+	<div class="wrapper">
+
+	</div>
 	{% block content %}{% endblock %}
 </body>
 </html>
