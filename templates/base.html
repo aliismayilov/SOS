@@ -9,7 +9,16 @@
 </head>
 <body>
 	<div class="wrapper">
-
+		<div class="lang">
+		{% for lang in languages %}
+			{% ifequal lang current_lang %}
+			<span>{{ lang }}</span>
+			{% else %}
+			<a href="{{ lang.get_absolute_url }}">{{ lang }}</a>
+			{% endifequal %}
+		{% endfor %}
+		</div>
+		<div class="cover">cover photo</div>
 	</div>
 	{% block content %}{% endblock %}
 </body>

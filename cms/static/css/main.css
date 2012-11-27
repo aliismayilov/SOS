@@ -3,3 +3,16 @@
 	background: orange;
 	width: 60%;
 }
+
+.lang {
+	width: 70px;
+	float: right;
+}
+
+.cover {
+	width: 100%;
+	background: blue;
+	height: 130px;
+	clear: both;
+	color: white;
+}

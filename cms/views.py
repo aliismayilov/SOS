@@ -9,7 +9,10 @@ from django.template import RequestContext
 def index(request, language='az'):
 	language = get_object_or_404(Language, small_name=language)
 
-	return render_to_response('base.html', {'language': language},
+	return render_to_response('base.html', {
+				'current_lang': language,
+				'languages': Language.objects.all(),
+			},
 		context_instance=RequestContext(request))
 
 def show_page(request, language, slug):
