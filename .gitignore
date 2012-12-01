@@ -28,7 +28,6 @@ pip-log.txt
 
 # sqlite database file
 data.db
-tiny_mce/*
+cms/static/tiny_mce/*
 SOS/settings.py
-static/*
 media/*
