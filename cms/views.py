@@ -6,12 +6,13 @@ from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, render_to_response
 from django.template import RequestContext
 
-def index(request, language='az'):
+def index(request, language='en'):
 	language = get_object_or_404(Language, small_name=language)
 
 	return render_to_response('base.html', {
 				'current_language': language,
 				'languages': Language.objects.all(),
+				'pages': Page.objects.filter(language=language, parent=None),
 			},
 		context_instance=RequestContext(request))
 

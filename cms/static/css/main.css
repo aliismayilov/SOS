@@ -16,3 +16,8 @@
 	clear: both;
 	color: white;
 }
+
+.navbar-links {
+	float: right;
+	width: 600px;
+}
