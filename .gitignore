@@ -30,3 +30,5 @@ pip-log.txt
 data.db
 tiny_mce/*
 SOS/settings.py
+static/*
+media/*
