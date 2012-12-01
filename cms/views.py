@@ -13,6 +13,8 @@ def index(request, language='en'):
 				'current_language': language,
 				'languages': Language.objects.all(),
 				'top_links': Page.objects.filter(language=language, parent=None)[:5],
+				'bottom_links': Page.objects.filter(language=language, parent=None)[5:8],
+				'side_links': Page.objects.filter(language=language, parent=None)[8:],
 				'latest_entries': Entry.objects.filter(language=language).exclude(image=None)[:3],
 			},
 		context_instance=RequestContext(request))

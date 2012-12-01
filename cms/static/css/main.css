@@ -1,4 +1,9 @@
 .well {
 	height: 160px;
 	clear: both;
+	text-align: center;
+}
+
+#myCarousel {
+	width: 750px;
 }
