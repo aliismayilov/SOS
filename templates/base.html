@@ -8,25 +8,24 @@
 	<link href="{{ STATIC_URL }}css/main.css" rel="stylesheet" />
 </head>
 <body>
-	<div class="wrapper">
-		<div class="languages">
+	<div class="container">
+		<ul class="nav nav-pills pull-right">
 		{% for language in languages %}
-			{% ifequal language current_language %}
-			<span>{{ language }}</span>
-			{% else %}
-			<a href="{{ language.get_absolute_url }}">{{ language }}</a>
-			{% endifequal %}
+			<li{% ifequal language current_language %} class="disabled"{% endifequal %}><a href="{{ language.get_absolute_url }}">{{ language }}</a></li>
 		{% endfor %}
-		</div>
-		<div class="cover">cover photo</div>
+		</ul>
+		<div class="well well-large">cover photo</div>
 		<div class="navbar">
-			<a href="/{{ current_language }}"><img src="{{ STATIC_URL }}img/logo.jpg" alt="LOGO" /></a>
-			<div class="navbar-links">
+			<div class="navbar-inner">
+				<a class="brand" href="/{{ current_language }}">Logo</a>
+				<ul class="nav">
 				{% for link in top_links %}
-					<a href="{{ link.get_absolute_url }}">{{ link }}</a>
+					<li><a href="{{ link.get_absolute_url }}">{{ link }}</a></li>
 				{% endfor %}
+				</ul>
 			</div>
 		</div>
+		
 	</div>
 	{% block content %}{% endblock %}
 </body>
