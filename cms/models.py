@@ -41,6 +41,9 @@ class Entry(models.Model):
 	slug = models.SlugField()
 	body = models.TextField()
 
+	# optional
+	image = models.ImageField(upload_to='entry_images', blank=True, null=True)
+
 	date_published = models.DateTimeField()
 
 	def __unicode__(self):
