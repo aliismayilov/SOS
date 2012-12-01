@@ -9,16 +9,19 @@
 </head>
 <body>
 	<div class="wrapper">
-		<div class="lang">
-		{% for lang in languages %}
-			{% ifequal lang current_lang %}
-			<span>{{ lang }}</span>
+		<div class="languages">
+		{% for language in languages %}
+			{% ifequal language current_language %}
+			<span>{{ language }}</span>
 			{% else %}
-			<a href="{{ lang.get_absolute_url }}">{{ lang }}</a>
+			<a href="{{ language.get_absolute_url }}">{{ language }}</a>
 			{% endifequal %}
 		{% endfor %}
 		</div>
 		<div class="cover">cover photo</div>
+		<div class="navbar">
+			<a href="/{{ current_language }}"><img src="{{ STATIC_URL }}img/logo.jpg" alt="LOGO" /></a>
+		</div>
 	</div>
 	{% block content %}{% endblock %}
 </body>
