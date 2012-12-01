@@ -20,6 +20,7 @@ class Page(models.Model):
 	# optional fields
 	parent = models.ForeignKey('self', blank=True, null=True)
 	priority = models.IntegerField(blank=True, null=True)
+	url = models.CharField(max_length=200, blank=True, null=True)
 
 	def __unicode__(self):
 		return self.title
@@ -28,7 +29,10 @@ class Page(models.Model):
 		ordering = ['priority']
 
 	def get_absolute_url(self):
-		return '/%s/%s.html' % (self.language, self.slug)
+		if self.url:
+			return self.url
+		else:
+			return '/%s/%s.html' % (self.language, self.slug)
 
 class Entry(models.Model):
 	language = models.ForeignKey('Language')
