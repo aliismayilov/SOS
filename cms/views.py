@@ -12,7 +12,7 @@ def index(request, language='en'):
 	return render_to_response('base.html', {
 				'current_language': language,
 				'languages': Language.objects.all(),
-				'pages': Page.objects.filter(language=language, parent=None),
+				'top_links': Page.objects.filter(language=language, parent=None)[:5],
 			},
 		context_instance=RequestContext(request))
 

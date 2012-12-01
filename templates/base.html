@@ -22,8 +22,8 @@
 		<div class="navbar">
 			<a href="/{{ current_language }}"><img src="{{ STATIC_URL }}img/logo.jpg" alt="LOGO" /></a>
 			<div class="navbar-links">
-				{% for page in pages %}
-					<a href="{{ page.get_absolute_url }}">{{ page }}</a>
+				{% for link in top_links %}
+					<a href="{{ link.get_absolute_url }}">{{ link }}</a>
 				{% endfor %}
 			</div>
 		</div>
