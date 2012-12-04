@@ -17,7 +17,7 @@
 	<div class="container">
 		<ul class="nav nav-pills pull-right">
 		{% for language in languages %}
-			<li{% ifequal language current_language %} class="disabled"{% endifequal %}><a href="{{ language.get_absolute_url }}">{{ language }}</a></li>
+			<li{% ifequal language current_language %} class="disabled"{% endifequal %}><a href="{{ language.get_absolute_url }}">{{ language|upper }}</a></li>
 		{% endfor %}
 		</ul>
 		<div class="well well-large">cover photo</div>
