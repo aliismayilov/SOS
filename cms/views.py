@@ -6,7 +6,7 @@ from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, render_to_response
 from django.template import RequestContext
 
-def index(request, language='en'):
+def index(request, language='az'):
 	language = get_object_or_404(Language, small_name=language)
 
 	return render_to_response('index.html', {
