@@ -56,3 +56,25 @@ def show_entry(request, language, date, slug):
 				'entry': entry,
 			},
 		context_instance=RequestContext(request))
+
+def archive(request, language, date):
+	language = get_object_or_404(Language, small_name=language)
+	date = datetime.strptime(date, "%Y/%b")
+
+	entries = Entry.objects.filter(
+			language=language,
+			date_published__year=date.year,
+			date_published__month=date.month,
+		)
+
+	return render_to_response('archive.html', {
+				'current_language': language,
+				'languages': Language.objects.all(),
+				'top_links': Page.objects.filter(language=language, parent=None)[:5],
+				'bottom_links': Page.objects.filter(language=language, parent=None)[5:8],
+				'side_links': Page.objects.filter(language=language, parent=None)[8:],
+				'entries': entries,
+				'year': date.year,
+				'month': date.strftime("%B"),
+			},
+		context_instance=RequestContext(request))

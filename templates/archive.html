@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Archive for {{ month }} {{ year }}{% endblock %}
+
+{% block content %}
+	<h1>Results for {{ month }} {{ year }}</h1>
+	<ul>
+	{% for entry in entries %}
+		<li><a href="{{ entry.get_absolute_url }}">{{ entry }}</a> on {{ entry.date_published|date:"M j, Y" }}</li>
+	{% empty %}
+		<li>Sorry, no results...</li>
+	{% endfor %}
+	</ul>
+{% endblock %}
