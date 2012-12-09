@@ -17,7 +17,7 @@
 <body>
 	<div class="container">
 		<form class="navbar-search pull-left" action="/{{ current_language }}/search" method="get">
-			<input type="text" class="search-query" placeholder="Search" name="q" />
+			<input type="text" class="search-query" placeholder="Search" name="q" value="{{ query }}" />
 		</form>
 		<ul class="nav nav-pills pull-right">
 		{% for language in languages %}
