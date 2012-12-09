@@ -4,7 +4,6 @@ from cms.models import Language, Page, Entry
 
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, render_to_response
-from django.template import RequestContext
 from django.db.models import Q
 
 def index(request, language='az'):
@@ -17,8 +16,7 @@ def index(request, language='az'):
 				'bottom_links': Page.objects.filter(language=language, parent=None)[5:8],
 				'side_links': Page.objects.filter(language=language, parent=None)[8:],
 				'latest_entries': Entry.objects.filter(language=language).exclude(image=None)[:3],
-			},
-		context_instance=RequestContext(request))
+			})
 
 def show_page(request, language, slug):
 	language = get_object_or_404(Language, small_name=language)
@@ -32,8 +30,7 @@ def show_page(request, language, slug):
 				'side_links': Page.objects.filter(language=language, parent=None)[8:],
 				'latest_entries': Entry.objects.filter(language=language).exclude(image=None)[:3],
 				'page': page,
-			},
-		context_instance=RequestContext(request))
+			})
 
 def show_entry(request, language, date, slug):
 	language = get_object_or_404(Language, small_name=language)
@@ -55,8 +52,7 @@ def show_entry(request, language, date, slug):
 				'side_links': Page.objects.filter(language=language, parent=None)[8:],
 				'latest_entries': Entry.objects.filter(language=language).exclude(image=None)[:3],
 				'entry': entry,
-			},
-		context_instance=RequestContext(request))
+			})
 
 def archive(request, language, year=None, month=None):
 	language = get_object_or_404(Language, small_name=language)
@@ -93,8 +89,7 @@ def archive(request, language, year=None, month=None):
 				'year': date.year,
 				'month': date.strftime("%B") if month else '',
 				'year_range': year_range,
-			},
-		context_instance=RequestContext(request))
+			})
 
 def search(request, language):
 	language = get_object_or_404(Language, small_name=language)
@@ -120,5 +115,4 @@ def search(request, language):
 				'entries': entries,
 				'pages': pages,
 				'query': query,
-			},
-		context_instance=RequestContext(request))
+			})
