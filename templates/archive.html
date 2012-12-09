@@ -3,6 +3,14 @@
 {% block title %}Archive for {{ month }} {{ year }}{% endblock %}
 
 {% block content %}
+	{% if year_range %}
+	<h1>Select year</h1>
+	<ul>
+	{% for year in year_range %}
+		<li><a href="{{ year }}">{{ year }}</a></li>
+	{% endfor %}
+	</ul>
+	{% else %}
 	<h1>Results for {{ month }} {{ year }}</h1>
 	<ul>
 	{% for entry in entries %}
@@ -11,4 +19,5 @@
 		<li>Sorry, no results...</li>
 	{% endfor %}
 	</ul>
+	{% endif %}
 {% endblock %}
