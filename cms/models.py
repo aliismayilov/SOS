@@ -54,7 +54,7 @@ class Entry(models.Model):
 		ordering = ['-date_published']
 
 	def get_absolute_url(self):
-		return '/%s/%s/%s.html' % (
+		return '/news/%s/%s/%s.html' % (
 				self.language,
 				self.date_published.strftime("%Y/%b/%d").lower(),
 				self.slug,
