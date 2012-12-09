@@ -4,5 +4,14 @@
 
 {% block content %}
 	<h1>{{ page.title }}</h1>
+	{% if page.page_set.all %}
+	<aside style="float: left; width: 300px; border: silver 1px solid; margin: 10px;">
+		<ul>
+		{% for child_page in page.page_set.all %}
+			<li><a href={{ child_page.get_absolute_url }}>{{ child_page }}</a></li>
+		{% endfor %}
+		</ul>
+	</aside>
+	{% endif %}
 	{{ page.body|safe }}
 {% endblock %}
