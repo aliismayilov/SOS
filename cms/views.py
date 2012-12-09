@@ -5,6 +5,7 @@ from cms.models import Language, Page, Entry
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, render_to_response
 from django.template import RequestContext
+from django.db.models import Q
 
 def index(request, language='az'):
 	language = get_object_or_404(Language, small_name=language)
@@ -92,5 +93,32 @@ def archive(request, language, year=None, month=None):
 				'year': date.year,
 				'month': date.strftime("%B") if month else '',
 				'year_range': year_range,
+			},
+		context_instance=RequestContext(request))
+
+def search(request, language):
+	language = get_object_or_404(Language, small_name=language)
+	
+	query = request.GET['q']
+
+	entries = Entry.objects.filter(
+			Q(title__contains=query) |
+			Q(body__contains=query)
+		)
+
+	pages = Page.objects.filter(
+			Q(title__contains=query) |
+			Q(body__contains=query)
+		)
+
+	return render_to_response('search.html', {
+				'current_language': language,
+				'languages': Language.objects.all(),
+				'top_links': Page.objects.filter(language=language, parent=None)[:5],
+				'bottom_links': Page.objects.filter(language=language, parent=None)[5:8],
+				'side_links': Page.objects.filter(language=language, parent=None)[8:],
+				'entries': entries,
+				'pages': pages,
+				'query': query,
 			},
 		context_instance=RequestContext(request))

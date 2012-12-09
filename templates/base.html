@@ -15,6 +15,9 @@
 </head>
 <body>
 	<div class="container">
+		<form class="navbar-search pull-left" action="/{{ current_language }}/search" method="get">
+			<input type="text" class="search-query" placeholder="Search" name="q" />
+		</form>
 		<ul class="nav nav-pills pull-right">
 		{% for language in languages %}
 			<li{% ifequal language current_language %} class="disabled"{% endifequal %}><a href="{{ language.get_absolute_url }}">{{ language|upper }}</a></li>

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Results for {{ query }}{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+	<h3>Results for {{ query }}</h3>
+	<div class="row-fluid">
+		<div class="span6">
+			<h5>Entries</h5>
+			<ul>
+			{% for entry in entries %}
+				<li><a href="{{ entry.get_absolute_url }}">{{ entry }}</a> on {{ entry.date_published|date:"M j, Y" }}</li>
+			{% empty %}
+				<li>Sorry, no results...</li>
+			{% endfor %}
+			</ul>
+		</div>
+		<div class="span6">
+			<h5>Pages</h5>
+			<ul>
+			{% for page in pages %}
+				<li><a href="{{ page.get_absolute_url }}">{{ page }}</a></li>
+			{% empty %}
+				<li>Sorry, no results...</li>
+			{% endfor %}
+			</ul>
+		</div>
+	</div>
+</div>
+{% endblock %}
