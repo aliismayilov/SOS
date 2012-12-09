@@ -97,13 +97,13 @@ def search(request, language):
 	query = request.GET['q']
 
 	entries = Entry.objects.filter(
-			Q(title__contains=query) |
-			Q(body__contains=query)
+			Q(title__icontains=query) |
+			Q(body__icontains=query)
 		)
 
 	pages = Page.objects.filter(
-			Q(title__contains=query) |
-			Q(body__contains=query)
+			Q(title__icontains=query) |
+			Q(body__icontains=query)
 		)
 
 	return render_to_response('search.html', {
