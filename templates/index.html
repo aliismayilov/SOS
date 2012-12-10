@@ -21,9 +21,4 @@
 	<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
 	<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 </div>
-<div class="row-fluid">
-{% for link in bottom_links %}
-	<a href="{{ link.get_absolute_url }}" class="btn btn-large btn-primary span4">{{ link }}</a>
-{% endfor %}
-</div>
 {% endblock %}
