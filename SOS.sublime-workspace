@@ -87,7 +87,7 @@
 			"file": "templates/show_page.html",
 			"settings":
 			{
-				"buffer_size": 444,
+				"buffer_size": 859,
 				"line_ending": "Unix"
 			}
 		},
@@ -95,7 +95,7 @@
 			"file": "templates/base.html",
 			"settings":
 			{
-				"buffer_size": 2452,
+				"buffer_size": 2666,
 				"line_ending": "Unix"
 			}
 		},
@@ -103,7 +103,7 @@
 			"file": "templates/index.html",
 			"settings":
 			{
-				"buffer_size": 1015,
+				"buffer_size": 846,
 				"line_ending": "Unix"
 			}
 		}
@@ -300,15 +300,15 @@
 					"file": "templates/show_page.html",
 					"settings":
 					{
-						"buffer_size": 444,
+						"buffer_size": 859,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								232,
-								232
+								750,
+								750
 							]
 						],
 						"settings":
@@ -317,7 +317,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -327,15 +327,15 @@
 					"file": "templates/base.html",
 					"settings":
 					{
-						"buffer_size": 2452,
+						"buffer_size": 2666,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								823,
-								823
+								1980,
+								1980
 							]
 						],
 						"settings":
@@ -344,7 +344,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 153.0,
+						"translation.y": 867.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -354,15 +354,15 @@
 					"file": "templates/index.html",
 					"settings":
 					{
-						"buffer_size": 1015,
+						"buffer_size": 846,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								597,
-								597
+								830,
+								830
 							]
 						],
 						"settings":
@@ -371,7 +371,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 204.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
