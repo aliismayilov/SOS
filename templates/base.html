@@ -49,6 +49,11 @@
 			<div class="row-fluid">
 				<div class="span9">
 					{% block content %}{% endblock %}
+					<div class="row-fluid">
+					{% for link in bottom_links %}
+						<a href="{{ link.get_absolute_url }}" class="btn btn-large btn-primary span4">{{ link }}</a>
+					{% endfor %}
+					</div>
 				</div>
 				<div class="span3">
 				{% for link in side_links %}
