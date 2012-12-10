@@ -32,3 +32,4 @@ cms/static/tiny_mce/*
 SOS/settings.py
 media/*
 SOS/server_settings.py
+SOS.sublime-project
