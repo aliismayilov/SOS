@@ -1,0 +1,444 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"year",
+				"year_range"
+			],
+			[
+				"fi",
+				"first_date"
+			],
+			[
+				"en",
+				"entries"
+			],
+			[
+				"da",
+				"date_published__month"
+			],
+			[
+				"dat",
+				"date_published__year"
+			],
+			[
+				"Proj",
+				"PROJECT_ROOT"
+			],
+			[
+				"ti",
+				"tiny_mce"
+			],
+			[
+				"tin",
+				"tinymce_models"
+			],
+			[
+				"s3bo",
+				"s3boto"
+			],
+			[
+				"Res",
+				"RequestContext"
+			],
+			[
+				"date",
+				"date_chunks"
+			],
+			[
+				"Entr",
+				"EntryAdmin"
+			],
+			[
+				"Page",
+				"PageAdmin"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "cms/models.py",
+			"settings":
+			{
+				"buffer_size": 1417,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "SOS/urls.py",
+			"settings":
+			{
+				"buffer_size": 784,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "cms/views.py",
+			"settings":
+			{
+				"buffer_size": 4119,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/show_page.html",
+			"settings":
+			{
+				"buffer_size": 444,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/base.html",
+			"settings":
+			{
+				"buffer_size": 2452,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/index.html",
+			"settings":
+			{
+				"buffer_size": 1015,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/ali/Documents/django-projects/SOS/templates/search.html",
+		"/home/ali/Documents/django-projects/SOS/SOS/settings.py",
+		"/home/ali/Documents/django-projects/SOS/templates/base.html",
+		"/home/ali/Documents/django-projects/SOS/templates/archive.html",
+		"/home/ali/Documents/django-projects/SOS/templates/archive_all.html",
+		"/home/ali/Documents/django-projects/SOS/cms/views.py",
+		"/home/ali/Documents/django-projects/SOS/SOS.sublime-workspace",
+		"/home/ali/Desktop/Instalacao_pub230_linux.txt",
+		"/home/ali/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/ali/Documents/django-projects/SOS/templates/index.html",
+		"/home/ali/Documents/django-projects/SOS/cms/static/css/main.css",
+		"/home/ali/Documents/django-projects/SOS/SOS/server_settings.py",
+		"/home/ali/Documents/django-projects/SOS/cms/models.py",
+		"/home/ali/Documents/django-projects/SOS/SOS/urls.py",
+		"/home/ali/Documents/django-projects/SOS/cms/admin.py",
+		"/home/ali/Documents/django-projects/SOS/cms/static/js/tiny_mce_init.js",
+		"/home/ali/Documents/django-projects/SOS/templates/show_page.html",
+		"/home/ali/Documents/django-projects/SOS/templates/show_entry.html",
+		"/home/ali/Desktop/tiny_mce_init.js",
+		"/home/ali/Documents/django-projects/SOS/cms/static/robots.txt",
+		"/etc/default/locale",
+		"/home/ali/Downloads/bootstrap/js/bootstrap.js",
+		"/home/ali/Documents/django-projects/SOS/s3utils.py",
+		"/home/ali/Downloads/tinymce/jscripts/tiny_mce/tiny_mce_popup.js",
+		"/home/ali/Downloads/tinymce/jscripts/tiny_mce/tiny_mce_init.js",
+		"/home/ali/Downloads/tinymce_init.js",
+		"/home/ali/Downloads/image.htm",
+		"/home/ali/Documents/django-projects/SOS/cms/static/main.css",
+		"/home/ali/.bashrc",
+		"/home/ali/Documents/django-projects/SOS/.gitignore",
+		"/home/ali/Downloads/git_tutorial/work/hello/README",
+		"/home/ali/Downloads/git_tutorial/work/README.md",
+		"/home/ali/Downloads/git_tutorial/work/Rakefile",
+		"/home/ali/Downloads/git_tutorial/work/lib/hello.rb",
+		"/home/ali/Downloads/git_tutorial/work/lib/greeter.rb",
+		"/home/ali/Documents/git/hello/lib/hello.py",
+		"/home/ali/Documents/git/hello/run.py",
+		"/home/ali/Documents/git/hello/hello.py",
+		"/home/ali/Documents/git/hello/$HOME/.gitconfig",
+		"/usr/share/applications/defaults.list",
+		"/usr/share/applications/sublime.desktop"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"static",
+			"carous",
+			"STATICFILES_STORAGE",
+			"gedit.desktop"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"sublime.desktop"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "cms/models.py",
+					"settings":
+					{
+						"buffer_size": 1417,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1307,
+								1307
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 408.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "SOS/urls.py",
+					"settings":
+					{
+						"buffer_size": 784,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								626,
+								626
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "cms/views.py",
+					"settings":
+					{
+						"buffer_size": 4119,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3525,
+								3525
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1479.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "templates/show_page.html",
+					"settings":
+					{
+						"buffer_size": 444,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								232,
+								232
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "templates/base.html",
+					"settings":
+					{
+						"buffer_size": 2452,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								823,
+								823
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 153.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "templates/index.html",
+					"settings":
+					{
+						"buffer_size": 1015,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								597,
+								597
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
