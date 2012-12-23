@@ -1,4 +1,163 @@
 body {
 	margin: 0;
 	padding: 0;
+	font-family: Arial;
+	font-size: 11pt;
+}
+
+.top-back-back {
+	background: url(../img/back-back.jpg);
+	width: 100%;
+	height: 245px;
+	position: absolute;
+	z-index: 10;
+}
+
+.top-back {
+	background: url(../img/bg.png);
+	width: 100%;
+	height: 207px;
+	position: absolute;
+	z-index: 20;
+}
+
+.wrapper {
+	width: 1024px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 15;
+}
+
+header {
+	color: white;
+	font-size: 9pt;
+	font-weight: bold;
+	width: 1024px;
+	height: 192px;
+	padding-top: 15px;
+	margin: 0 auto;
+}
+
+header a {
+	color: white;
+}
+
+header .logo {
+	display: block;
+	float: left;
+	margin-left: 50px;
+	width: 165px;
+	height: 55px;
+	background: url(../img/logo.gif);
+}
+
+.social-logos {
+	float: right;
+	margin-right: 50px;
+}
+
+.social-logos a {
+	width: 20px;
+	height: 20px;
+	float: left;
+	display: block;
+	margin-left: 10px;
+}
+
+.facebook {
+	background: url(../img/facebook.png);
+}
+
+.twitter {
+	background: url(../img/twitter.png);
+}
+
+.header-text {
+	float: right;
+	margin-top: 3px;
+}
+
+.header-text a {
+	text-decoration: none;
+}
+
+.header-text a:hover {
+	text-decoration: underline;
+}
+
+.cover {
+	width: 100%;
+	height: 245px;
+	position: relative;
+	z-index: 15;
+	background: url(../img/cover.gif) center no-repeat;
+}
+
+.navigation {
+	width: 100%;
+	height: 20px;
+	padding-top: 18px;
+	margin-top: -38px;
+	position: relative;
+	z-index: 20;
+}
+
+.nav-home {
+	display: block;
+	float: left;
+	margin-left: 45px;
+	width: 14px;
+	height: 13px;
+	background: url(../img/home.png);
+}
+
+nav {
+	display: block;
+	float: left;
+	font-size: 12pt;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+}
+
+nav ul li {
+	float: left;
+	margin: 0;
+	margin-left: 25px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #009ee0;
+}
+
+nav ul li a:hover {
+	text-decoration: underline;
+}
+
+nav ul li ul {
+	display: block;
+	position: absolute;
+}
+
+nav ul li:hover ul {
+	display: block;
+	position: absolute;
+	background: red;
+}
+
+nav ul li ul li {
+	float: none;
+	display: block;
+	background: url(../img/menu-li.gif);
+	padding-top: 10px;
+	height: 28px;
+	padding-left: 10px;
+	padding-right: 40px;
+}
+
+nav ul li ul li:hover {
+	background: url(../img/menu-li-hover.gif);
 }
