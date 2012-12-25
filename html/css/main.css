@@ -204,3 +204,24 @@ nav ul li ul li:hover {
 .big-ads {
 	background: url(../img/big-ads.png);
 }
+
+.content {
+	clear: both;
+}
+
+footer {
+	width: 100%;
+	height: 220px;
+	clear: both;
+	margin-top: 20px;
+	background: url(../img/twooter.png) no-repeat left;
+	margin-left: -250px;
+}
+
+.footer-back {
+	width: 100%;
+	height: 88px;
+	background: url(../img/footer.jpg) bottom repeat-x;
+	position: absolute;
+	margin-top: -80px;
+}
