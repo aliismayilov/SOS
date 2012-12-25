@@ -98,6 +98,7 @@ header .logo {
 	height: 20px;
 	padding-top: 18px;
 	margin-top: -38px;
+	margin-bottom: 25px;
 	position: relative;
 	z-index: 20;
 }
@@ -138,14 +139,14 @@ nav ul li a:hover {
 }
 
 nav ul li ul {
-	display: block;
+	display: none;
 	position: absolute;
 }
 
 nav ul li:hover ul {
 	display: block;
 	position: absolute;
-	background: red;
+	margin-left: -38px;
 }
 
 nav ul li ul li {
@@ -160,4 +161,46 @@ nav ul li ul li {
 
 nav ul li ul li:hover {
 	background: url(../img/menu-li-hover.gif);
+}
+
+#myCarousel {
+	width: 611px;
+	float: left;
+}
+
+.big-links {
+	width: 333px;
+	float: right;
+}
+
+.big-links a {
+	display: block;
+	width: 235px;
+	height: 64px;
+	color: white;
+	text-decoration: none;
+	font-size: 14pt;
+	padding-top: 22px;
+	padding-left: 98px;
+}
+
+.big-links a:hover {
+	text-decoration: underline;
+	color: white;
+}
+
+.big-donate {
+	background: url(../img/big-donate.png);
+}
+
+.big-contactus {
+	background: url(../img/big-contactus.png);
+}
+
+.big-plans {
+	background: url(../img/big-plans.png);
+}
+
+.big-ads {
+	background: url(../img/big-ads.png);
 }
