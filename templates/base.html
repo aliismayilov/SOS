@@ -55,15 +55,15 @@
 				<input type="search" name="q" placeholder="Search..." required="required" value="{{ query }}" />
 			</form>
 		</div>
-		{% block carousel %}{% endblock %}
+		{% block menubox %}{% endblock %}
+		<div class="content">
+			{% block content %}{% endblock %}
+		</div>
 		<div class="big-links">
 			<a href="#" class="big-donate">Donate now</a>
 			<a href="#" class="big-contactus">Contact us</a>
 			<a href="#" class="big-plans">Plans and reports</a>
 			<a href="#" class="big-advert">Adverstisements</a> 
-		</div>
-		<div class="content">
-			{% block content %}{% endblock %}
 		</div>
 		<footer>
 			<div class="twitter-wrapper">

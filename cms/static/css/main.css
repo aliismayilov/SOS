@@ -261,7 +261,8 @@ nav ul li ul li:hover {
 }
 
 .content {
-	clear: both;
+	float: left;
+	width: 678px;
 }
 
 footer {

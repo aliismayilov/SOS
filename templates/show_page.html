@@ -1,30 +1,43 @@
 {% extends "base.html" %}
 
-{% block title %}{{ page.title }}{% endblock %}
+{% block title %}{{ page.title }} - {% endblock %}
+
+{% block menubox %}
+	{% if page.page_set.all and page.parent %}
+	<div class="menu-box-hover"></div>
+		<div class="menu-box">
+			<div class="menu-box-left"></div>
+		{% for child_page in page.page_set.all %}
+			<a href="{{ child_page.get_absolute_url }}">{{ child_page }}</a>
+			{% if forloop.last %}{% else %}
+			<span>|</span>
+			{% endif %}
+		{% endfor %}
+		<div class="menu-box-right"></div>
+	</div>
+	{% elif page.parent %}
+	<div class="menu-box-hover"></div>
+		<div class="menu-box">
+			<div class="menu-box-left"></div>
+		{% for child_page in page.parent.page_set.all %}
+			{% ifequal child_page page %}
+			<span>{{ child_page }}</span>
+				{% if forloop.last %}{% else %}
+				<span>|</span>
+				{% endif %}
+			{% else %}
+			<a href={{ child_page.get_absolute_url }}>{{ child_page }}</a>
+				{% if forloop.last %}{% else %}
+				<span>|</span>
+				{% endif %}
+			{% endifequal %}
+		{% endfor %}
+		<div class="menu-box-right"></div>
+	</div>
+	{% endif %}
+{% endblock %}
 
 {% block content %}
 	<h1>{{ page.title }}</h1>
-	{% if page.page_set.all and page.parent %}
-	<aside style="float: left; width: 300px; border: silver 1px solid; margin: 10px;">
-		<ul>
-		{% for child_page in page.page_set.all %}
-			<li><a href={{ child_page.get_absolute_url }}>{{ child_page }}</a></li>
-		{% endfor %}
-		</ul>
-	</aside>
-	{% elif page.parent %}
-	<aside style="float: left; width: 300px; border: silver 1px solid; margin: 10px;">
-		<h5>{{ page.parent }}</h5>
-		<ul>
-		{% for child_page in page.parent.page_set.all %}
-			{% ifequal child_page page %}
-			<li>{{ child_page }}</li>
-			{% else %}
-			<li><a href={{ child_page.get_absolute_url }}>{{ child_page }}</a></li>
-			{% endifequal %}
-		{% endfor %}
-		</ul>
-	</aside>
-	{% endif %}
 	{{ page.body|safe }}
 {% endblock %}
