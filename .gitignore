@@ -34,3 +34,4 @@ media/*
 SOS/server_settings.py
 SOS.sublime-project
 SOS.sublime-workspace
+*thumbs.db
