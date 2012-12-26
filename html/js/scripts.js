@@ -8,6 +8,8 @@ $(document).ready(function() {
 		template: "{text}"
 	});
 
+	$('#shareme').attr('data-url', document.URL);
+
 	$('#shareme').sharrre({
 		share: {
 			twitter: true,
