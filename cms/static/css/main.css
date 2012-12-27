@@ -196,11 +196,13 @@ nav ul li ul li:hover {
 	float: left;
 	background: url(../img/menu-box-left.png);
 	margin-top: -3px;
+	margin-right: -9px;
 }
 
 .menu-box-right {
 	float: right;
 	background: url(../img/menu-box-right.png);
+	margin-right: 0px;
 }
 
 .menu-box a {
@@ -214,8 +216,8 @@ nav ul li ul li:hover {
 }
 
 .menu-box span {
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 #myCarousel {
