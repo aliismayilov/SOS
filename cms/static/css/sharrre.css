@@ -1,10 +1,5 @@
 .sharrre .box{
-    background:#6f838c;
-    background:-webkit-gradient(linear,left top,left bottom,color-stop(#6f838c,0),color-stop(#4d5e66,1));
-    background:-webkit-linear-gradient(top, #6f838c 0%, #4d5e66 100%);
-    background:-moz-linear-gradient(top, #6f838c 0%, #4d5e66 100%);
-    background:-o-linear-gradient(top, #6f838c 0%, #4d5e66 100%);
-    background:linear-gradient(top, #6f838c 0%, #4d5e66 100%);
+    background:#019fe0;
     filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#6f838c', endColorstr='#4d5e66',GradientType=0 );
     -webkit-box-shadow:0 1px 1px #d3d3d3;
     -moz-box-shadow:0 1px 1px #d3d3d3;
