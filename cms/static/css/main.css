@@ -54,6 +54,7 @@ header .logo {
 .social-logos {
 	float: right;
 	margin-right: 50px;
+	margin-top: -3px;
 }
 
 .social-logos a {
@@ -74,7 +75,7 @@ header .logo {
 
 .header-text {
 	float: right;
-	margin-top: 3px;
+	margin-top: -2px;
 }
 
 .header-text a {
