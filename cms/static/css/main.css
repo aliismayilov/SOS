@@ -283,8 +283,9 @@ footer {
 .twitter-wrapper {
 	float: left;
 	margin-left: 325px;
-	width: 545px;
+	width: 459px;
 	font-size: 9pt;
+	margin-top: 8px;
 }
 
 .twitter-user {
