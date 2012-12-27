@@ -217,9 +217,6 @@ nav ul li ul li:hover {
 .menu-box a:hover {
 	color: white;
 	text-decoration: underline;
-	margin-top: -7px;
-	padding-top: 7px;
-	background: url(../img/menubox-active.jpg) repeat-x top;
 }
 
 .menu-box span {
