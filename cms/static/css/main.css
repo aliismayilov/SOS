@@ -229,7 +229,7 @@ nav ul li ul li:hover {
 .big-links {
 	width: 333px;
 	float: right;
-	margin-top: 25px;
+	margin-top: 14px;
 }
 
 .big-links a {
@@ -241,6 +241,7 @@ nav ul li ul li:hover {
 	font-size: 14pt;
 	padding-top: 22px;
 	padding-left: 98px;
+	margin-bottom: -5px;
 }
 
 .big-links a:hover {
