@@ -4,7 +4,6 @@
 
 {% block menubox %}
 	{% if page.page_set.all and page.parent %}
-	<div class="menu-box-hover"></div>
 		<div class="menu-box">
 			<div class="menu-box-left"></div>
 		{% for child_page in page.page_set.all %}
@@ -16,21 +15,13 @@
 		<div class="menu-box-right"></div>
 	</div>
 	{% elif page.parent %}
-	<div class="menu-box-hover"></div>
 		<div class="menu-box">
 			<div class="menu-box-left"></div>
 		{% for child_page in page.parent.page_set.all %}
-			{% ifequal child_page page %}
-			<span>{{ child_page }}</span>
-				{% if forloop.last %}{% else %}
-				<span>|</span>
-				{% endif %}
-			{% else %}
-			<a href={{ child_page.get_absolute_url }}>{{ child_page }}</a>
-				{% if forloop.last %}{% else %}
-				<span>|</span>
-				{% endif %}
-			{% endifequal %}
+			<a href={{ child_page.get_absolute_url }}{% ifequal child_page page %} class="menubox-active"{% endifequal %}>{{ child_page }}</a>
+			{% if forloop.last %}{% else %}
+			<span>|</span>
+			{% endif %}
 		{% endfor %}
 		<div class="menu-box-right"></div>
 	</div>
