@@ -4,14 +4,14 @@
 
 {% block content %}
 	{% if year_range %}
-	<h1>Select year</h1>
+	<h4>Select year</h4>
 	<ul>
 	{% for year in year_range %}
 		<li><a href="{{ year }}">{{ year }}</a></li>
 	{% endfor %}
 	</ul>
 	{% else %}
-	<h1>Results for {{ month }} {{ year }}</h1>
+	<h4>Results for {{ month }} {{ year }}</h4>
 	<ul>
 	{% for entry in entries %}
 		<li><a href="{{ entry.get_absolute_url }}">{{ entry }}</a> on {{ entry.date_published|date:"M j, Y" }}</li>
