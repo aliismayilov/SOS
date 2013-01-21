@@ -4,7 +4,7 @@ $(document).ready(function() {
 	$(".tweet").tweet({
 		avatar_size: 32,
 		count: 1,
-		username: "sos_children",
+		username: "SOSChildrenAz",
 		template: "{text}"
 	});
 
