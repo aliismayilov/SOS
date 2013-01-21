@@ -8,6 +8,10 @@ $(document).ready(function() {
 		template: "{text}"
 	});
 
+	$(".twitter-wrapper a").each(function (index) {
+		$(this).attr("target", "_blank");
+	});
+
 	$('#shareme').sharrre({
 		share: {
 			twitter: true,
