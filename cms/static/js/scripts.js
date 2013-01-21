@@ -8,10 +8,6 @@ $(document).ready(function() {
 		template: "{text}"
 	});
 
-	$(".twitter-wrapper a").each(function (index) {
-		$(this).attr("target", "_blank");
-	});
-
 	$('#shareme').sharrre({
 		share: {
 			twitter: true,
@@ -39,5 +35,9 @@ $(document).ready(function() {
 	$(this).find("a.tweet_action").click(function(ev) {
 		window.open(this.href, "Retweet", 'menubar=0,resizable=0,width=550,height=420,top=200,left=400');
 		ev.preventDefault();
+	});
+
+	$(".twitter-wrapper a").each(function (index) {
+		$(this).attr("target", "_blank");
 	});
 });
