@@ -7,7 +7,7 @@
 	<div class="carousel-inner">
 		{% for entry in latest_entries %}
 		<div class="item{% if forloop.first %} active{% endif %}">
-			<img src="{% static "img/611x311.jpg" %" alt="{{ entry }}" />
+			<img src="{% static "img/611x311.jpg" %}" alt="{{ entry }}" />
 			<div class="carousel-caption">
 				<h4><a href="{{ entry.get_absolute_url }}">{{ entry }}</a></h4>
 				<time>{{ entry.date_published|date:"M j, Y" }}</time>
