@@ -238,6 +238,10 @@ nav ul li ul li:hover {
 	margin-top: 25px;
 }
 
+time {
+	color: white;
+}
+
 .big-links {
 	width: 333px;
 	float: right;
