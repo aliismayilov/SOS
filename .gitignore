@@ -27,7 +27,7 @@ pip-log.txt
 .mr.developer.cfg
 
 # sqlite database file
-data.db
+SOS/data.db
 SOS/secret_settings.py
 SOS/media/*
 SOS/static/*
