@@ -1,3 +1,4 @@
+from filebrowser.fields import FileBrowseField
 from django.db import models
 
 class Language(models.Model):
@@ -42,7 +43,7 @@ class Entry(models.Model):
 	body = models.TextField()
 
 	# optional
-	image = models.ImageField(upload_to='entry_images', blank=True, null=True)
+	image = FileBrowseField("Image", max_length=200, directory="images/", blank=True, null=True)
 
 	date_published = models.DateTimeField()
 
