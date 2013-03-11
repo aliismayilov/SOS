@@ -28,9 +28,9 @@ pip-log.txt
 
 # sqlite database file
 data.db
-cms/static/tiny_mce/*
-SOS/settings.py
-media/*
+SOS/secret_settings.py
+SOS/media/*
+SOS/static/*
 *thumbs.db
 
 # virtual env
