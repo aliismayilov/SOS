@@ -7,15 +7,15 @@ class PageAdmin(admin.ModelAdmin):
 	prepopulated_fields = {"slug": ("title",)}
 	list_filter = ('language',)
 	class Media:
-		js = (settings.STATIC_URL + 'tiny_mce/tiny_mce.js',
-			  settings.STATIC_URL + 'js/tiny_mce_init.js',)
+		js = (settings.STATIC_URL + 'grappelli/tinymce/jscripts/tiny_mce/tiny_mce_src.js',
+			  settings.STATIC_URL + 'filebrowser/js/TinyMCEAdmin.js',)
 
 class EntryAdmin(admin.ModelAdmin):
 	prepopulated_fields = {"slug": ("title",)}
 	list_filter = ('language',)
 	class Media:
-		js = (settings.STATIC_URL + 'tiny_mce/tiny_mce.js',
-			  settings.STATIC_URL + 'js/tiny_mce_init.js',)
+		js = (settings.STATIC_URL + 'grappelli/tinymce/jscripts/tiny_mce/tiny_mce_src.js',
+			  settings.STATIC_URL + 'filebrowser/js/TinyMCEAdmin.js',)
 
 admin.site.register(Language)
 admin.site.register(Page, PageAdmin)

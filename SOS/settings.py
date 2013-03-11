@@ -2,10 +2,6 @@ import os
 import secret_settings
 from secret_settings import PROJECT_ROOT
 
-# Grappelli settings
-GRAPPELLI_INDEX_DASHBOARD = 'SOS.dashboard.CustomIndexDashboard'
-GRAPPELLI_ADMIN_TITLE = 'SOS Administration'
-
 # Django settings for SOS project.
 
 DEBUG = True
@@ -159,3 +155,7 @@ LOGGING = {
         },
     }
 }
+
+# Additional settings
+GRAPPELLI_INDEX_DASHBOARD = 'SOS.dashboard.CustomIndexDashboard'
+GRAPPELLI_ADMIN_TITLE = 'SOS Administration'
