@@ -2,6 +2,10 @@ import os
 import secret_settings
 from secret_settings import PROJECT_ROOT
 
+# Grappelli settings
+GRAPPELLI_INDEX_DASHBOARD = 'SOS.dashboard.CustomIndexDashboard'
+GRAPPELLI_ADMIN_TITLE = 'SOS Administration'
+
 # Django settings for SOS project.
 
 DEBUG = True
@@ -96,6 +100,13 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
+TEMPLATE_CONTEXT_PROCESSORS = (
+    "django.contrib.auth.context_processors.auth",
+    "django.core.context_processors.request",
+    "django.core.context_processors.i18n",
+    'django.contrib.messages.context_processors.messages',
+)
+
 ROOT_URLCONF = 'SOS.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
@@ -112,6 +123,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'grappelli.dashboard',
     'grappelli',
     'filebrowser',
     'django.contrib.admin',
