@@ -124,7 +124,7 @@ INSTALLED_APPS = (
     'filebrowser',
     'django.contrib.admin',
     'cms',
-    #'south',
+    'south',
 )
 
 # A sample logging configuration. The only tangible logging

@@ -31,6 +31,7 @@ SOS/data.db
 SOS/secret_settings.py
 SOS/media/*
 SOS/static/*
+cms/migrations/*
 *thumbs.db
 
 # virtual env
