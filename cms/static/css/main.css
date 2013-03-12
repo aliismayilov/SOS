@@ -342,3 +342,11 @@ footer small {
 	position: absolute;
 	margin-top: -80px;
 }
+
+.img_right {
+	float: right;
+}
+
+.img_left {
+	float: left;
+}
