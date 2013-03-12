@@ -3,6 +3,7 @@
 {% block title %}{{ entry.title }} - {% endblock %}
 
 {% block content %}
+	<img src="{{ entry.image.url }}" alt="{{ entry }}" width="{{ entry.image.width }}" height="{{ entry.image.height }}" />
 	<h4>{{ entry.title }}</h4>
 	<time>{{ entry.date_published|date:"d.m.Y" }}</time>
 	<div>{{ entry.body|safe }}</div>

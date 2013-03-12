@@ -350,3 +350,7 @@ footer small {
 .img_left {
 	float: left;
 }
+
+.content > img {
+	margin: 10px;
+}
