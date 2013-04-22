@@ -62,10 +62,10 @@
 			{% block content %}{% endblock %}
 		</div>
 		<div class="big-links">
-			<a href="#" class="big-donate">Donate now</a>
-			<a href="#" class="big-contactus">Contact us</a>
-			<a href="#" class="big-plans">Plans and reports</a>
-			<a href="#" class="big-advert">Adverstisements</a> 
+			<a href="#" class="big-donate">{% if current_language.small_name == "az" %}İanə edin{% else %}Donate now{% endif %}</a>
+			<a href="#" class="big-contactus">{% if current_language.small_name == "az" %}Əlaqə{% else %}Contact us{% endif %}</a>
+			<a href="#" class="big-plans">{% if current_language.small_name == "az" %}Planlar və hesabatlar{% else %}Plans and reports{% endif %}</a>
+			<a href="#" class="big-advert">{% if current_language.small_name == "az" %}Reklamlar{% else %}Adverstisements{% endif %}</a> 
 		</div>
 		<footer>
 			<div class="twitter-wrapper">
